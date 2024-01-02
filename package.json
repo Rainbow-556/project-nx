@@ -1,0 +1,24 @@
+{
+  "name": "project-nx",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.13.1",
+  "type": "module",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "only-allow": "^1.2.1"
+  }
+}

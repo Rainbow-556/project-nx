@@ -1,0 +1,8 @@
+packages:
+  # all packages in direct subdirs of packages/，apps内的直系子文件夹（包含package.json）的都是子包
+  - 'apps/*'
+  - 'libs/*'
+  # all packages in subdirs of components/，components内所有子或子孙文件夹(包含package.json)都是子包
+  # - 'components/**'
+  # exclude packages that are inside test directories
+  # - '!**/test/**'
