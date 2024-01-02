@@ -1,0 +1,12 @@
+{
+  "name": "app1",
+  "targets": {
+    "dev": {
+      "cache": true
+    },
+    "build": {},
+    "publish": {},
+    "lint": {},
+    "test": {}
+  }
+}
