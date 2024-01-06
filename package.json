@@ -15,9 +15,6 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm"
   },
-  "dependencies": {
-    "lodash-es": "^4.17.21"
-  },
   "devDependencies": {
     "nx": "^17.2.8",
     "only-allow": "^1.2.1"
