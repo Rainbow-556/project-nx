@@ -34,6 +34,19 @@ importers:
         specifier: ^5.0.8
         version: 5.0.11
 
+  apps/clean-architecture:
+    dependencies:
+      vue:
+        specifier: ^3.3.11
+        version: 3.4.5
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^4.5.2
+        version: 4.6.2(vite@5.0.11)(vue@3.4.5)
+      vite:
+        specifier: ^5.0.8
+        version: 5.0.11
+
   libs/lib1:
     devDependencies:
       vite:
