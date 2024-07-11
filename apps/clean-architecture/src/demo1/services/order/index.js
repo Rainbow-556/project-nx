@@ -1,6 +1,7 @@
 import { Service } from '../service';
 import { reactive } from 'vue';
 import { placeOrderUseCase } from './placeOrderUseCase';
+import { Result } from '@/demo1/result';
 
 export class OrderService extends Service {
   constructor({ serviceManager }) {
@@ -19,7 +20,7 @@ export class OrderService extends Service {
 
   async placeOrder() {
     const cartService = this.serviceManager.get({ name: 'cart' });
-    await placeOrderUseCase({ goods: cartService.state.goodsList });
-    await cartService.clear();
+    const userService = this.serviceManager.get({ name: 'user' });
+    await placeOrderUseCase({ orderService: this, userService, cartService });
   }
 }

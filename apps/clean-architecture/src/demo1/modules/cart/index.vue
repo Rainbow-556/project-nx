@@ -1,15 +1,13 @@
 <template>
-  <div>goods count: {{ cartState.goodsList.length }}</div>
-  <div>total price: {{ orderState.totalPrice }}</div>
-  <button @click="cartService.addGoods({ goods: { goodsId: 'goodsId', price: 2 } })">add</button>
+  <div>goods count: {{ cartServiceState.goodsList.length }}</div>
+  <div>total price: {{ orderServiceState.totalPrice }}</div>
+  <button @click="onAddBtnTap">add</button>
 </template>
 
 <script setup>
-import { useService } from '../../useService';
+import { usePresenter } from './usePresenter';
 
-const { service: cartService, state: cartState } = useService({ name: 'cart' });
-
-const { service: orderService, state: orderState } = useService({ name: 'order' });
+const { cartServiceState, orderServiceState, onAddBtnTap } = usePresenter();
 </script>
 
 <style scoped></style>

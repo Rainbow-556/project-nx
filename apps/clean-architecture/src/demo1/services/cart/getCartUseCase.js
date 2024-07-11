@@ -1,7 +1,9 @@
-export function getCartUseCase({ shopId }) {
+export function getCartUseCase({ cartService }) {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve({ goodsList: [] });
+      cartService.state.goodsList = [];
+      cartService.serviceManager.get({ name: 'order' }).updateTotalPrice();
+      resolve();
     }, 500);
   });
 }
