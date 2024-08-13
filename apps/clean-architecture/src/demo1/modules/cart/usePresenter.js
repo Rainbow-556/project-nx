@@ -21,7 +21,7 @@ export function usePresenter() {
       // showToast('添加成功');
     } catch (e) {
       console.log(e);
-      // showToast('添加成功');
+      // showToast('添加失败');
     } finally {
       // hideLoading();
     }
